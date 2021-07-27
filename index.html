@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Bank of Techtonica</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body id="body">
+    <header class="header">
+      <nav class="navbar">
+
+      </nav>
+      <h1>Simplified Services to Simplify Your life</h1>  
+    </header>
+    <main class="main">
+      <section class="services">
+        <div class="balance-card">
+          <img src="https://images.unsplash.com/photo-1607863680151-1da3e60691bb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fGJhbmtpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="paper money and coins">
+          <h3 class="card-text">Account Balance</h3>
+          <p class="card-text">Account snapshot at yout finger tips</p>
+          <a href="#account-info" class="service-link balance-link">Get started<a>
+        </div>
+        <div class="deposit-card">
+          <img src="https://images.unsplash.com/photo-1607459726349-72ff2d5eb4a7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjV8fGJhbmtpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="a man looking at his phone smiling">
+          <h3 class="card-text">Make a Deposit</h3>
+          <p class="card-text">Save for your future</p>
+          <a href="#account-info" class="service-link deposit-link">Get started<a>
+        </div>
+        <div class="transfer-card">
+          <img src="https://images.unsplash.com/photo-1616077167555-51f6bc516dfa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODZ8fGJhbmtpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="a phone screen showing 100 dollars transfer">
+          <h3 class="card-text">Initiate a Transfer</h3>
+          <p class="card-text">Anytime anywhere transfers made easy</p>
+          <a href="#account-info" class="service-link transfer-link">Get started<a>
+        </div>
+    </section>
+    <section id="account-info"> 
+      <form class="form-hidden">
+        <label for="name" id="name-label"><span>Username</span><br>
+          <input type="text" id="username" placeholder="Enter your username" required>
+        </label><br><br>
+        <label for="password" id="password-label"><span>Password</span><br>
+          <input type="password" id="password" placeholder="Enter your password" required>
+        </label><br><br>
+        <button type="submit" class="userinfo-submit">Submit</button>   
+      </form>
+      <div class="placeholder">
+        <p class="placeholder-info"></p>
+      </div>
+    </section>
+    <section class="contact">
+      <h3 class="contact-service">Contact Us</h3>
+      <form class="contact-form">
+        <label for="name" id="name-label"><span>Name</span><br>
+          <input type="text" required id="name" placeholder="Enter your name">
+        </label><br><br>
+        <label for="email" id="email-label"><span>Email</span><br>
+          <input type="email" required id="email" placeholder="Enter your email">
+        </label><br><br>
+        <label for="phone" id="phone-label"><span>Phone number</span><br>
+          <input type="tel" required id="phone" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+          <small>Format: 123-456-7890</small>
+        </label><br><br>
+        <label for="drop-down" id="dropdown-label"><span>How would you like to be contacted?</span><br>
+          <select id="dropdown" name="methods">
+            <option value="email">Email</option>
+            <option value="phone">Call</option>
+            <option value="text">Text</option>
+          </select>
+        </label><br><br>
+        <label><span>Which account do you need help with?</span><br>
+          <input type="radio" name="service-help" value="debit">Checking account<br>
+          <input type="radio" name="service-help" value="credit">Savings account<br>
+          <input type="radio" name="service-help" value="other">Credit card<br>
+          <input type="radio" name="service-help" value="other">Other
+        </label><br><br>
+        <label for="name" id="name-label"><span>How can we help you? Please specify your inquiry here:</span><br>
+          <textarea name="comments" rows="5" cols="50" placeholder="Enter your inquiry here"></textarea>
+        </label><br><br>
+        <button type="submit" id="form-submit">Submit</button>   
+      </form>
+      
+    </section>
+    <sectiob class="table">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+    </main>
+  </body>
+</html>
